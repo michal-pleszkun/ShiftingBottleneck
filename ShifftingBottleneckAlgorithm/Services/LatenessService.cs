@@ -44,7 +44,7 @@ namespace ShiftingBottleneckAlgorithm.Services
                 }
                 else
                 {
-                    cmax = node.ReleaseTime; // we will wait
+                    cmax = node.ReleaseTime + node.ExecutionTime; // we will wait
                 }
             }
             return cmax;
